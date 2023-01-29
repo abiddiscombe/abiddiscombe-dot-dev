@@ -23,8 +23,18 @@ function PortfolioCard({ title = 'Untitled Card', href = '', desc = '', tags = [
 function Portfolio() {
 
     const [projects, setProjects] = useState({
-        personal: [],
-        ordnancesurvey: []
+        personal: [{
+            name: '',
+            href: '',
+            desc: '',
+            tags: []
+        }],
+        ordnancesurvey: [{
+            name: '',
+            href: '',
+            desc: '',
+            tags: []
+        }]
     })
 
     async function fetchProjectList() {
