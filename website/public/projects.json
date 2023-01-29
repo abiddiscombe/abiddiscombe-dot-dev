@@ -1,0 +1,49 @@
+{
+    "personal": [
+        {
+            "name": "🗺️ countries-api",
+            "href": "https://github.com/abiddiscombe/countries",
+            "desc": "Perform lookups on country names to return GeoJSON geometries. Published to Docker Hub.",
+            "tags": ["JS", "Docker", "Deno", "KoaJS"]
+        },
+        {
+            "name": "🌱 greg-agent",
+            "href": "https://github.com/abiddiscombe/greg-agent",
+            "desc": "Digest your houseplant stats via a JSON API, connected to the Greg Plant Care app.",
+            "tags": ["JS", "Docker", "NodeJS", "Express"]
+        },
+        {
+            "name": "🎨 tailwind-ui-elements",
+            "href": "https://github.com/abiddiscombe/tailwind-ui-elements",
+            "desc": "A collection of simple TailwindCSS elements that I use regularly in projects.",
+            "tags": ["Tailwind"]
+        }
+    ],
+    "ordnancesurvey": [
+        {
+            "name": "OSDataHub JS Library",
+            "href": "https://github.com/OrdnanceSurvey/osdatahub-js",
+            "desc": "A JavaScript library designed to make data from the OS Data Hub APIs readily accessible to web developers.",
+            "tags": ["JS", "Typescript"]
+        },
+        {
+            "name": "PostmanGeoJSON",
+            "href": "https://github.com/OrdnanceSurvey/postmanGeoJSON",
+            "desc": "A GeoJSON visual response viewer built for Postman's Visualizer tool, building on previous work.",
+            "tags": ["JS", "Postman", "LeafletJS"]
+        },
+        {
+            "name": "OS Imagery Layer Currency Map",
+            "href": "https://www.ordnancesurvey.co.uk/os-demos/imagery-layer-currency-map/",
+            "desc": "A web app for confirming the regional currency of OS' MasterMap Imagery Layer product.",
+            "tags": ["JS", "LeafletJS"]
+
+        },
+        {
+            "name": "MapLibre Camera Position",
+            "href": "https://github.com/abiddiscombe-os/os-mlCameraPosition",
+            "desc": "A web application to extract active camera position data from a MapLibre map, built with OS' Terrain 50 dataset.",
+            "tags": ["JS", "MapLibre"]
+        }
+    ]
+}
