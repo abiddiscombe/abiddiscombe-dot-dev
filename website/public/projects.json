@@ -44,6 +44,12 @@
             "href": "https://github.com/abiddiscombe-os/os-mlCameraPosition",
             "desc": "A web application to extract active camera position data from a MapLibre map, built with OS' Terrain 50 dataset.",
             "tags": ["JS", "MapLibre"]
+        },
+        {
+            "name": "Zoomstack-to-PMTiles",
+            "href": "https://github.com/abiddiscombe-os/os-zoomstack2pmtiles",
+            "desc": "A guide explaining how to create a PMTiles version of Ordnance Survey's Open Zoomstack (MBTiles) dataset, also contains a Maplibre GL JS demo.",
+            "tags": ["JS", "MapLibre", "PMTiles"]
         }
     ]
 }
