@@ -11,7 +11,7 @@ function PortfolioCard({ title = 'Untitled Card', href = '', desc = '', tags = [
                 <div className='mt-4 flex flex-wrap gap-2'>
                     { tags.map((tag) => {
                         return (
-                            <span className='text-xs text-gray-400 uppercase before:content-["#"]'>{tag}</span>
+                            <span className='text-xs text-gray-400 dark:text-zinc-600 font-mono uppercase before:content-["#"]'>{tag}</span>
                         )
                     })}
                 </div>
