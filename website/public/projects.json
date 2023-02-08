@@ -3,7 +3,7 @@
         {
             "name": "🗺️ countries-api",
             "href": "https://github.com/abiddiscombe/countries",
-            "desc": "Perform lookups on country names to return GeoJSON geometries. Published to Docker Hub.",
+            "desc": "Perform lookups on country names to return GeoJSON. Published to Docker Hub.",
             "tags": ["JS", "Docker", "Deno", "KoaJS"]
         },
         {
