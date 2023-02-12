@@ -2,6 +2,7 @@
 
 import Header from '../elements/Header'
 import Hero from '../elements/Hero'
+import TechStack from '../elements/TechStack'
 import Portfolio from '../elements/Portfolio'
 import Footer from '../elements/Footer'
 
@@ -12,6 +13,7 @@ function Master () {
 			<Header />
 			<main className='min-h-screen '>
 				<Hero />
+				<TechStack />
 				<Portfolio />
 			</main>
 			<Footer />

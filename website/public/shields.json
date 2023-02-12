@@ -1,0 +1,167 @@
+[
+    {
+        "id": "Languages",
+        "content": [
+            {
+                "name": "JavaScript",
+                "logo": "javascript",
+                "col_bg": "323330",
+                "col_fg": "f7df1e"
+            },
+            {
+                "name": "TypeScript",
+                "logo": "typescript",
+                "col_bg": "007ACC",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Python",
+                "logo": "python",
+                "col_bg": "ffd43b",
+                "col_fg": "323330"
+            },
+            {
+                "name": "HTML",
+                "logo": "html5",
+                "col_bg": "e34f26",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "CSS",
+                "logo": "css3",
+                "col_bg": "1572b6",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "SQL",
+                "logo": "postgresql",
+                "col_bg": "00758f",
+                "col_fg": "ffffff"
+            }
+        ]
+    },
+    {
+        "id": "Tools & Utilities",
+        "content": [
+            {
+                "name": "DigitalOcean",
+                "logo": "digitalocean",
+                "col_bg": "008bcf",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Cloudflare",
+                "logo": "cloudflare",
+                "col_bg": "f38020",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "SelfHosted",
+                "logo": "raspberrypi",
+                "col_bg": "c7058f",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Docker",
+                "logo": "docker",
+                "col_bg": "0db7ed",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Portainer",
+                "logo": "portainer",
+                "col_bg": "0099ff",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "NodeJS",
+                "logo": "nodedotjs",
+                "col_bg": "44883e",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Deno",
+                "logo": "deno",
+                "col_bg": "323330",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Vite",
+                "logo": "vite",
+                "col_bg": "333333",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Obsidian",
+                "logo": "obsidian",
+                "col_bg": "483699",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "VS Code",
+                "logo": "visualstudiocode",
+                "col_bg": "204056",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Postman",
+                "logo": "postman",
+                "col_bg": "ef5b25",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "QGIS",
+                "logo": "qgis",
+                "col_bg": "89ba16",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Leaflet",
+                "logo": "leaflet",
+                "col_bg": "199900",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "MapLibre",
+                "logo": "mapbox",
+                "col_bg": "3bb2d0",
+                "col_fg": "ffffff"
+            }
+        ]
+    },
+    {
+        "id": "Now Learning",
+        "content": [
+            {
+                "name": "Azure",
+                "logo": "microsoft-azure",
+                "col_bg": "0089d6",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "TailwindCSS",
+                "logo": "tailwindcss",
+                "col_bg": "0ea5e9",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "KoaJS",
+                "logo": "koa",
+                "col_bg": "33333d",
+                "col_fg": "ffffff"
+            },
+            {
+                "name": "Svelte",
+                "logo": "svelte",
+                "col_bg": "4a4a55",
+                "col_fg": "ff3e00"
+            },
+            {
+                "name": "React",
+                "logo": "react",
+                "col_bg": "2196f3",
+                "col_fg": "ffffff"
+            }
+        ]
+    }
+]
