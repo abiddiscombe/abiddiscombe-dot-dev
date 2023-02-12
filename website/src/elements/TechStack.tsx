@@ -4,7 +4,19 @@ import { useState, useEffect } from 'react'
 
 function TechStack() {
 
-    const [shields, setShields] = useState([])
+    const [shields, setShields] = useState([
+        {
+            id: 'Test',
+            content: [
+                {
+                    name: undefined,
+                    logo: undefined,
+                    col_bg: undefined,
+                    col_fg: undefined
+                }
+            ]
+        }
+    ])
 
     async function fetchShields() {
         const res = await fetch('./shields.json')
@@ -16,7 +28,7 @@ function TechStack() {
         fetchShields()
     }, [])
 
-    if (!shields.length) {
+    if (shields.length < 1) {
         return (
             <section>
                 {/* return nothing */}
