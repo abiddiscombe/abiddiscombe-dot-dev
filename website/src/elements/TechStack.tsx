@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-export default ({ href }) => {
+export default ({ href = '' }) => {
     return (
         <section className='px-8 py-8 | sm:max-w-[70rem] sm:mx-auto'>
             <TechStack href={href} />
@@ -10,7 +10,7 @@ export default ({ href }) => {
     )
 }
 
-function TechStack({ href }) {
+function TechStack({ href = '' }) {
 
     const [shields, setShields] = useState([
         {
