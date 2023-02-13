@@ -1,0 +1,20 @@
+[
+        {
+            "name": "🗺️ countries-api",
+            "href": "https://github.com/abiddiscombe/countries",
+            "desc": "Perform lookups on country names to return GeoJSON. Published to Docker Hub.",
+            "tags": ["JS", "Docker", "Deno", "KoaJS"]
+        },
+        {
+            "name": "🌱 greg-agent",
+            "href": "https://github.com/abiddiscombe/greg-agent",
+            "desc": "Digest your houseplant stats via a JSON API, connected to the Greg Plant Care app.",
+            "tags": ["JS", "Docker", "NodeJS", "Express"]
+        },
+        {
+            "name": "🎨 tailwind-ui-elements",
+            "href": "https://github.com/abiddiscombe/tailwind-ui-elements",
+            "desc": "A collection of simple TailwindCSS elements that I use regularly in projects.",
+            "tags": ["Tailwind"]
+        }
+]

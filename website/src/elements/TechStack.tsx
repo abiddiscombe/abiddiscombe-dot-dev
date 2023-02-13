@@ -2,7 +2,15 @@
 
 import { useState, useEffect } from 'react'
 
-function TechStack() {
+export default ({ href }) => {
+    return (
+        <section className='px-8 py-8 | sm:max-w-[70rem] sm:mx-auto'>
+            <TechStack href={href} />
+        </section>
+    )
+}
+
+function TechStack({ href }) {
 
     const [shields, setShields] = useState([
         {
@@ -19,7 +27,7 @@ function TechStack() {
     ])
 
     async function fetchShields() {
-        const res = await fetch('./shields.json')
+        const res = await fetch(href)
         const resJSON = await res.json()
         setShields(resJSON)
     }
@@ -29,35 +37,39 @@ function TechStack() {
     }, [])
 
     if (shields.length < 1) {
+
         return (
-            <section>
-                {/* return nothing */}
-            </section>
+            <>
+            </>
         )
+
+    } else {
+
+        return (
+            <>
+                <h2 className='mb-6 text-xl font-semibold text-gray-700 dark:text-zinc-200'>My Tech Stack</h2>
+                { shields.map((category) => {
+                    return (
+                        <>
+                            {category.id == 'Now Learning' &&
+                                <h3 className='my-4 text-sm text-gray-700 dark:text-zinc-200'>I'm also learning how to use...</h3>
+                            }
+                            <div className='my-2 flex flex-wrap gap-2'>
+                                {category.content.map((item) => {
+                                    return (
+                                        <img className='rounded-sm' src={`https://img.shields.io/badge/${item.name}-${item.col_bg}?style=for-the-badge&logo=${item.logo}&logoColor=${item.col_fg}`} alt={item.name} />
+                                    )
+                                })}
+                            </div>
+                        </>
+                    )
+                })}
+            </>
+        )
+
     }
 
-    return (
-        <section className='py-2 sm:max-w-[68rem] sm:mx-auto text-gray-700 dark:text-zinc-200'>
-            <h2 className='mb-4 text-xl font-semibold'>My Tech Stack</h2>
-            {shields.map((category) => {
-                return (
-                    <>
-                        {category.id == 'Now Learning' &&
-                            <h3 className='mt-4 text-sm'>I'm also learning how to use...</h3>
-                        }
-                        <div className='my-2 flex flex-wrap gap-2'>
-                            {category.content.map((item) => {
-                                return (
-                                    <img className='rounded-sm' src={`https://img.shields.io/badge/${item.name}-${item.col_bg}?style=for-the-badge&logo=${item.logo}&logoColor=${item.col_fg}`} alt={item.name} />
-                                )
-                            })}
-                        </div>
-                    </>
-                )
-            })}
-        </section>
-    )
+
 
 }
 
-export default TechStack

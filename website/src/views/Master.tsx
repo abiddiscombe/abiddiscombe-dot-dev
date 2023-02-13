@@ -6,19 +6,25 @@ import TechStack from '../elements/TechStack'
 import Portfolio from '../elements/Portfolio'
 import Footer from '../elements/Footer'
 
-function Master () {
+export default () => {
+
+	const dataSources = {
+		techStack: './shields.json',
+		portfolioPlay: './portfolio-play.json',
+		portfolioWork: './portfolio-work.json'
+	}
 
 	return (
 		<div className='bg-gray-100 dark:bg-zinc-900'>
 			<Header />
-			<main className='min-h-screen '>
+			<main>
 				<Hero />
-				<TechStack />
-				<Portfolio />
+				<TechStack href={dataSources.techStack} />
+				<Portfolio href={dataSources.portfolioPlay} title='Projects' />
+				<Portfolio href={dataSources.portfolioWork} title='Open Projects @ Ordnance Survey' />
 			</main>
 			<Footer />
 		</div>
 	)
-}
 
-export default Master
+}

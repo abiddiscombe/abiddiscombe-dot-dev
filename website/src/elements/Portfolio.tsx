@@ -2,6 +2,15 @@
 
 import { useState, useEffect } from 'react'
 
+export default ({ href, title }) => {
+    return (
+        <section className='px-8 py-8 | sm:max-w-[70rem] sm:mx-auto'>
+            <h2 className='mb-6 text-xl font-semibold text-gray-700 dark:text-zinc-200'>{title}</h2>
+            <Portfolio href={href} />
+        </section>
+    )
+}
+
 function PortfolioCard({ title = 'Untitled Card', href = '', desc = '', tags = [] }) {
     return (
         <a href={href} target='_blank'>
@@ -9,7 +18,7 @@ function PortfolioCard({ title = 'Untitled Card', href = '', desc = '', tags = [
                 <h3 className='mb-1 text-lg text-gray-700 dark:text-zinc-200'>{title}</h3>
                 <p className='text-sm text-gray-500 dark:text-zinc-400'>{desc} </p>
                 <div className='mt-4 flex flex-wrap gap-2'>
-                    { tags.map((tag) => {
+                    {tags.map((tag) => {
                         return (
                             <span className='text-xs text-gray-400 dark:text-zinc-600 font-mono uppercase before:content-["#"]'>{tag}</span>
                         )
@@ -20,25 +29,19 @@ function PortfolioCard({ title = 'Untitled Card', href = '', desc = '', tags = [
     )
 }
 
-function Portfolio() {
+function Portfolio({ href }) {
 
-    const [projects, setProjects] = useState({
-        personal: [{
+    const [projects, setProjects] = useState([
+        {
             name: '',
             href: '',
             desc: '',
             tags: []
-        }],
-        ordnancesurvey: [{
-            name: '',
-            href: '',
-            desc: '',
-            tags: []
-        }]
-    })
+        }
+    ])
 
     async function fetchProjectList() {
-        const res = await fetch('./projects.json')
+        const res = await fetch(href)
         const resJSON = await res.json()
         setProjects(resJSON)
     }
@@ -47,36 +50,19 @@ function Portfolio() {
         fetchProjectList()
     }, [])
 
-    if (projects.personal.length > 0) {
+    if (projects.length > 0) {
         return (
-            <section className='px-8 py-2'>
-                <div className='sm:max-w-[68rem] sm:mx-auto text-gray-700 dark:text-zinc-200'>
-                    <h2 className='my-6 text-xl font-semibold'>Projects</h2>
-                    <div className='mb-4 flex flex-row flex-wrap gap-4'>
-                        {projects.personal.map((project) => {
-                            return (
-                                <PortfolioCard title={project.name} href={project.href} desc={project.desc} tags={project.tags} />
-                            )
-                        })}
-                    </div>
-                    <h2 className='mt-6 mb-1 text-xl font-semibold'>Projects @ Ordnance Survey</h2>
-                    <p className='mb-6 text-sm italic text-gray-400'>Some of my public-facing work...</p>
-                    <div className='mb-4 flex flex-wrap gap-4'>
-                        {projects.ordnancesurvey.map((project) => {
-                            return (
-                                <PortfolioCard title={project.name} href={project.href} desc={project.desc} tags={project.tags} />
-                            )
-                        })}
-                    </div>
-                </div>
-
-            </section>
+            <div className='mb-4 flex flex-wrap gap-4'>
+                { projects.map((project) => {
+                    return (
+                        <PortfolioCard title={project.name} href={project.href} desc={project.desc} tags={project.tags} />
+                    )
+                })}
+            </div>
         )
     } else {
         return (
-            <section></section>
+            <div></div>
         )
     }
 }
-
-export default Portfolio
