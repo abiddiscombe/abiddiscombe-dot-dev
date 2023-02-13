@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-export default ({ href, title }) => {
+export default ({ href = '', title = ''}) => {
     return (
         <section className='px-8 py-8 | sm:max-w-[70rem] sm:mx-auto'>
             <h2 className='mb-6 text-xl font-semibold text-gray-700 dark:text-zinc-200'>{title}</h2>
@@ -29,7 +29,7 @@ function PortfolioCard({ title = 'Untitled Card', href = '', desc = '', tags = [
     )
 }
 
-function Portfolio({ href }) {
+function Portfolio({ href = ''}) {
 
     const [projects, setProjects] = useState([
         {
