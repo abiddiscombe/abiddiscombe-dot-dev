@@ -28,10 +28,9 @@ export default () => {
 	return (
 		<div className='min-h-screen bg-gray-100 dark:bg-zinc-900'>
 			<Header />
+			<Hero />
 			<main>
-
-				<Hero />
-
+	
 				{dynamicContent.shields[0] &&
 					<Shields content={dynamicContent.shields} />
 				}

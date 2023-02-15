@@ -14,21 +14,23 @@ interface PortfolioGroupItem {
 
 export default ({ content = []} ) => {
     return (
-        <section className='px-8 py-8 | sm:max-w-[70rem] sm:mx-auto'>
-            {content.map((category: PortfolioGroup, key:number) => {
-                return (
-                    <div key={key}>
-                        <h2 className='mb-6 text-xl font-semibold text-gray-700 dark:text-zinc-200'>{category.id}</h2>
-                        <div className='mb-4 flex flex-wrap gap-4'>
-                            { category.items.map((item: PortfolioGroupItem, key: number) => {
-                                return (
-                                    <PortfolioCard key={key} details={item} />
-                                )
-                            })}
+        <section>
+            <div className='px-8 py-8 | sm:max-w-[70rem] sm:mx-auto'>
+                {content.map((category: PortfolioGroup, key:number) => {
+                    return (
+                        <div key={key}>
+                            <h2 className='mb-6 text-xl font-semibold text-gray-700 dark:text-zinc-200'>{category.id}</h2>
+                            <div className='mb-4 flex flex-wrap gap-4'>
+                                { category.items.map((item: PortfolioGroupItem, key: number) => {
+                                    return (
+                                        <PortfolioCard key={key} details={item} />
+                                    )
+                                })}
+                            </div>
                         </div>
-                    </div>
-                )
-            })}
+                    )
+                })}
+            </div>
         </section>
     )
 }
