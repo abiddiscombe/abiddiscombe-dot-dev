@@ -93,9 +93,21 @@
                     "col_fg": "ffffff"
                 },
                 {
+                    "name": "Markdown",
+                    "logo": "markdown",
+                    "col_bg": "000001",
+                    "col_fg": "ffffff"
+                },
+                {
                     "name": "Obsidian",
                     "logo": "obsidian",
                     "col_bg": "483699",
+                    "col_fg": "ffffff"
+                },
+                {
+                    "name": "Git",
+                    "logo": "git",
+                    "col_bg": "f05033",
                     "col_fg": "ffffff"
                 },
                 {
