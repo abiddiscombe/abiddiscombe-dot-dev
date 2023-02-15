@@ -20,7 +20,7 @@ export default ({ content = []} ) => {
                     return (
                         <div key={key}>
                             <h2 className='mb-6 text-xl font-semibold text-gray-700 dark:text-zinc-200'>{category.id}</h2>
-                            <div className='mb-4 flex flex-wrap gap-4'>
+                            <div className='mb-16 flex flex-wrap gap-4'>
                                 { category.items.map((item: PortfolioGroupItem, key: number) => {
                                     return (
                                         <PortfolioCard key={key} details={item} />
