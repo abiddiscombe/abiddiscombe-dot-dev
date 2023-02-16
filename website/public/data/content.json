@@ -111,6 +111,12 @@
                     "col_fg": "ffffff"
                 },
                 {
+                    "name": "TailwindCSS",
+                    "logo": "tailwindcss",
+                    "col_bg": "0ea5e9",
+                    "col_fg": "ffffff"
+                },
+                {
                     "name": "VS Code",
                     "logo": "visualstudiocode",
                     "col_bg": "204056",
@@ -146,15 +152,9 @@
             "id": "I'm also learning how to use...",
             "items": [
                 {
-                    "name": "Azure",
+                    "name": "MS Azure",
                     "logo": "microsoft-azure",
                     "col_bg": "0089d6",
-                    "col_fg": "ffffff"
-                },
-                {
-                    "name": "TailwindCSS",
-                    "logo": "tailwindcss",
-                    "col_bg": "0ea5e9",
                     "col_fg": "ffffff"
                 },
                 {
