@@ -99,6 +99,12 @@
                     "col_fg": "ffffff"
                 },
                 {
+                    "name": "React",
+                    "logo": "react",
+                    "col_bg": "2196f3",
+                    "col_fg": "ffffff"
+                },
+                {
                     "name": "Markdown",
                     "logo": "markdown",
                     "col_bg": "000001",
@@ -174,12 +180,6 @@
                     "logo": "svelte",
                     "col_bg": "4a4a55",
                     "col_fg": "ff3e00"
-                },
-                {
-                    "name": "React",
-                    "logo": "react",
-                    "col_bg": "2196f3",
-                    "col_fg": "ffffff"
                 }
             ]
         }
