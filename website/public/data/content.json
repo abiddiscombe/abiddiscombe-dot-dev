@@ -87,6 +87,12 @@
                     "col_fg": "ffffff"
                 },
                 {
+                    "name": "Deno Deploy",
+                    "logo": "deno",
+                    "col_bg": "323330",
+                    "col_fg": "ffffff"
+                },
+                {
                     "name": "Vite",
                     "logo": "vite",
                     "col_bg": "333333",
