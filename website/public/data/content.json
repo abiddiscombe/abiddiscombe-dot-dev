@@ -261,13 +261,14 @@
                     ]
                 },
                 {
-                    "name": "Zoomstack-to-PMTiles",
-                    "href": "https://github.com/abiddiscombe-os/os-zoomstack2pmtiles",
-                    "desc": "A guide explaining how to create a PMTiles version of Ordnance Survey's Open Zoomstack (MBTiles) dataset.",
+                    "name": "OS Open Data: MBTiles-to-PMTiles",
+                    "href": "https://github.com/abiddiscombe-os/mbtiles-to-pmtiles-conversion-guide",
+                    "desc": "A guide on the steps to create a PMTiles version of most MBTiles datasets, with a focus towards OS Open Data products.",
                     "tags": [
                         "JS",
                         "MapLibre",
-                        "PMTiles"
+                        "PMTiles",
+                        "Edge"
                     ]
                 }
             ]
